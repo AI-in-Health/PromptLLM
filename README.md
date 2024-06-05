@@ -51,9 +51,6 @@ python inference.py \
 --load='./ckpt/${model_weights}' \
 --image_path='./example_figs/fig1.jpg' 
 ```
-## Training Curves 
-<img width=400 src="training_loss_iteration.jpg"/><img width=400 src="training_loss_epoch.jpg"/>
-
 
 ## Data
 ```
