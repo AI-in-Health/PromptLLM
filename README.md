@@ -56,17 +56,6 @@ The `data` folder contains the following subfolders:
 - The `pretrained` folder contains the initialized weights for our encoder which will download automatically when you run the code.
 - The `decoder_config`, `model_weights` and  `prompt` folders contain the configuration file of the model, its weights, and the support prompt in the inference stage, respectively.
 
-## Datasets
-We provide the links for quick downloading datasets.
-
-| Dataset | 
-| :--- | 
-| [COVIDx-CXR-2](https://alexswong.github.io/COVID-Net/)  |
-| [COVID-CXR](https://github.com/ieee8023/covid-chestxray-dataset) | 
-| [BIMCV-COVID-19](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/) |
-| [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/) | 
-| [NIH ChestX-ray](https://nihcc.app.box.com/v/ChestXray-NIHCC) | 
-
 ## Training
 Here is an example of running command:
 ```
