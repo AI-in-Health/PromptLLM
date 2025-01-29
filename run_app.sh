@@ -1,1 +1,0 @@
-CUDA_VISIBLE_DEVICES=1 python app.py --load ./ckpts/few-shot.pth
