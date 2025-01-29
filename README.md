@@ -1,18 +1,5 @@
-# System Requirements
-## Hardware requirements
-PromptNet package requires only a standard computer with enough RAM to support the operations defined by a user. For minimal performance, this will be a computer with about 2 GB of RAM. For optimal performance, we recommend a computer with the following specs:
-```
-RAM: 16+ GB
-CPU: 4+ cores, 3.3+ GHz/core
-GPU: 2+ V100
-```
-The runtimes below are generated using a computer with the recommended specs.
+# Code for PromptNet
 
-## Software requirements
-This package is supported for Linux. The package has been tested on the following system:
-```
-Linux: Ubuntu 16.04
-```
 ## Environment
 Clone the repo
 ```
@@ -30,27 +17,6 @@ pip install pytorch>=1.10.1 torchvision>=0.11.2 torchaudio>=0.10.1 pytorch-cuda=
 pip install -r requirement.txt
 ```
 which should install in about 5 mins. We can run the code under `torch==2.0.1` and `torchvision==0.15.2`. Other versions may work.
-
-## Pre-trained Model
-We provide a quick implementation of our method.
-
-First, you should download the pre-trained models and prompts from [Google Drive](https://drive.google.com/drive/folders/1I0ZlSA_onTkhj7uZd9BHlJgSGRaFNLL0?usp=sharing).
-| Type | File Name | 
-| :--- | :--- |
-| Prompts | prompt.pth |
-| Few-shot Model (1%) | few-shot.pth |
-| Fully-supervised Model (100%) | fully-supervised.pth |
-
-Then, you can directly run the following command to process your own medical images:
-```
-export model_weights=few-shot.pth
-or
-export model_weights=fully-supervised.pth
-python inference.py \
---prompt='./prompt/prompt.pth' \
---load='./ckpt/${model_weights}' \
---image_path='./example_figs/fig1.jpg' 
-```
 
 ## Data
 ```
@@ -176,4 +142,4 @@ rm stanford-corenlp-4.5.2.zip
 
 ## Bugs or Questions?
 
-If you encounter any problems when using the code, or want to report a bug, you can open an issue or email fenglin.liu@eng.ox.ac.uk and yangbang@pku.edu.cn. Please try to specify the problem with details so we can help you better and quicker!
+If you encounter any problems when using the code, or want to report a bug, you can email fenglin.liu@eng.ox.ac.uk. Please try to specify the problem with details so we can help you better and quicker!
